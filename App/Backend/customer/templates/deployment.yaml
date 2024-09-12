@@ -31,7 +31,7 @@ kind: Service
 metadata:
   name: {{ .Chart.Name }}-service
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - port: 8080
   selector:
